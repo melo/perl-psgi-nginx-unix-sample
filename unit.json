@@ -8,7 +8,12 @@
     "perl_app": {
       "type": "perl",
       "working_directory": "/app/",
-      "script": "/app/app.psgi"
+      "script": "/app/app.psgi",
+      "processes": {
+        "max": 10,
+        "spare": 5,
+        "idle_timeout": 10
+      }
     }
   }
 }
