@@ -1,0 +1,14 @@
+{
+  "listeners": {
+    "*:80": {
+      "pass": "applications/perl_app"
+    }
+  },
+  "applications": {
+    "perl_app": {
+      "type": "perl",
+      "working_directory": "/app/",
+      "script": "/app/app.psgi"
+    }
+  }
+}
